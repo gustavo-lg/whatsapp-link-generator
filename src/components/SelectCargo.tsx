@@ -45,6 +45,7 @@ export function SelectCargo<T extends FieldValues = FieldValues>({
         <Box>
           <Typography
             variant="body1"
+            id={`${name}-label`}
             sx={{
               mb: 1,
               fontWeight: 700,
@@ -60,9 +61,7 @@ export function SelectCargo<T extends FieldValues = FieldValues>({
               {...field}
               value={field.value || ""}
               displayEmpty
-              aria-label={label}
-              aria-invalid={!!error}
-              aria-describedby={error ? `${name}-error` : undefined}
+              labelId={`${name}-label`}
               sx={{
                 backgroundColor: "#FFFFFF",
                 borderRadius: "12px",

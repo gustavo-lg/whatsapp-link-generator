@@ -31,7 +31,7 @@ export function Header() {
             loading="eager"
           />
           <Typography
-            component="h1"
+            component="p"
             variant="h6"
             sx={{
               fontWeight: 500,

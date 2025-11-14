@@ -434,7 +434,7 @@ export function FormPage() {
                 <Box sx={{ mb: 2 }}>
                   <TrendingUpIcon sx={{ fontSize: 40, color: "#005A87" }} />
                 </Box>
-                <Typography variant="h6" sx={{ mb: 2, fontWeight: 700 }}>
+                <Typography variant="h6" component="h3" sx={{ mb: 2, fontWeight: 700 }}>
                   Atalho rumo às vendas
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
@@ -472,7 +472,7 @@ export function FormPage() {
                 <Box sx={{ mb: 2 }}>
                   <MessageIcon sx={{ fontSize: 40, color: "#005A87" }} />
                 </Box>
-                <Typography variant="h6" sx={{ mb: 2, fontWeight: 700 }}>
+                <Typography variant="h6" component="h3" sx={{ mb: 2, fontWeight: 700 }}>
                   Mensagem automática
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
@@ -509,7 +509,7 @@ export function FormPage() {
                 <Box sx={{ mb: 2 }}>
                   <BoltIcon sx={{ fontSize: 40, color: "#005A87" }} />
                 </Box>
-                <Typography variant="h6" sx={{ mb: 2, fontWeight: 700 }}>
+                <Typography variant="h6" component="h3" sx={{ mb: 2, fontWeight: 700 }}>
                   Rápido e 100% gratuito
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
@@ -1036,6 +1036,7 @@ export function FormPage() {
                 <CardContent sx={{ p: 0, "&:last-child": { pb: 0 } }}>
                   <Typography
                     variant="h6"
+                    component="h3"
                     sx={{
                       fontWeight: 700,
                       fontSize: '20px',
@@ -1072,6 +1073,7 @@ export function FormPage() {
                 <CardContent sx={{ p: 0, "&:last-child": { pb: 0 } }}>
                   <Typography
                     variant="h6"
+                    component="h3"
                     sx={{
                       fontWeight: 700,
                       fontSize: '20px',
@@ -1108,6 +1110,7 @@ export function FormPage() {
                 <CardContent sx={{ p: 0, "&:last-child": { pb: 0 } }}>
                   <Typography
                     variant="h6"
+                    component="h3"
                     sx={{
                       fontWeight: 700,
                       fontSize: '20px',
@@ -1278,6 +1281,7 @@ export function FormPage() {
                     >
                       <Typography
                         variant="h6"
+                        component="h3"
                         sx={{
                           fontWeight: 700,
                           fontSize: "20px",
@@ -1350,6 +1354,7 @@ export function FormPage() {
                     >
                       <Typography
                         variant="h6"
+                        component="h3"
                         sx={{
                           fontWeight: 700,
                           fontSize: "20px",
@@ -1420,6 +1425,7 @@ export function FormPage() {
                     >
                       <Typography
                         variant="h6"
+                        component="h3"
                         sx={{
                           fontWeight: 700,
                           fontSize: "20px",
@@ -1490,6 +1496,7 @@ export function FormPage() {
                     >
                       <Typography
                         variant="h6"
+                        component="h3"
                         sx={{
                           fontWeight: 700,
                           fontSize: "20px",

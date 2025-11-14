@@ -1,3 +1,6 @@
+/* Importar fontes locais */
+@import './styles/fonts.css';
+
 * {
   margin: 0;
   padding: 0;

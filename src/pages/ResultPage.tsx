@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Helmet } from "react-helmet-async";
+import { Title, Meta, Link as HeadLink } from "react-head";
 import { SnackbarAlert } from "../components/SnackbarAlert";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -75,15 +75,13 @@ export function ResultPage() {
       <a href="#main-content" className="skip-link">
         Pular para o conteúdo principal
       </a>
-      <Helmet>
-        <title>Link Gerado com Sucesso - Gerador de Link para WhatsApp</title>
-        <meta
-          name="description"
-          content="Seu link do WhatsApp foi gerado com sucesso! Copie e compartilhe em seus canais digitais."
-        />
-        <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://gerador-link-whatsapp.rdstation.com/resultado" />
-      </Helmet>
+      <Title>Link Gerado com Sucesso - Gerador de Link para WhatsApp</Title>
+      <Meta
+        name="description"
+        content="Seu link do WhatsApp foi gerado com sucesso! Copie e compartilhe em seus canais digitais."
+      />
+      <Meta name="robots" content="noindex, nofollow" />
+      <HeadLink rel="canonical" href="https://gerador-link-whatsapp.rdstation.com/resultado" />
 
       <Header />
 

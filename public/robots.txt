@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /resultado
+
+Sitemap: https://whatsapp-link-generator-tau.vercel.app/sitemap.xml
+

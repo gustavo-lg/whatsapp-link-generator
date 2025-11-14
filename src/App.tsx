@@ -1,4 +1,4 @@
-import { HelmetProvider } from "react-helmet-async";
+import { HeadProvider } from "react-head";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import { AppRoutes } from "./routes";
 
@@ -18,12 +18,12 @@ const theme = createTheme({
 
 function App() {
   return (
-    <HelmetProvider>
+    <HeadProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <AppRoutes />
       </ThemeProvider>
-    </HelmetProvider>
+    </HeadProvider>
   );
 }
 

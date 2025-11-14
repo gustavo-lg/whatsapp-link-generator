@@ -20,7 +20,7 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Helmet } from "react-helmet-async";
+import { Title, Meta, Link as HeadLink } from "react-head";
 import { useFormLink } from "../hooks/useFormLink";
 import { FormField } from "../components/FormField";
 import { SelectCargo } from "../components/SelectCargo";
@@ -100,42 +100,52 @@ export function FormPage() {
       <a href="#main-content" className="skip-link">
         Pular para o conteúdo principal
       </a>
-      <Helmet>
-        <title>Gerador de Link para WhatsApp - RD Station</title>
-        <meta
-          name="description"
-          content="Gerador de Link para WhatsApp gratuito da RD Station. Crie seu link personalizado e inicie conversas com um clique nos seus canais digitais!"
-        />
-        <meta name="keywords" content="gerador link whatsapp, link whatsapp, whatsapp business, rd station, criar link whatsapp" />
-        <meta property="og:title" content="Gerador de Link para WhatsApp - RD Station" />
-        <meta property="og:description" content="Crie seu link de WhatsApp e inicie conversas com um clique nos seus canais digitais!" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Gerador de Link para WhatsApp - RD Station" />
-        <meta name="twitter:description" content="Crie seu link de WhatsApp e inicie conversas com um clique nos seus canais digitais!" />
-        <link rel="canonical" href="https://gerador-link-whatsapp.rdstation.com/" />
-        <script type="application/ld+json">
-          {JSON.stringify({
+      <Title>Gerador de Link para WhatsApp - RD Station</Title>
+      <Meta
+        name="description"
+        content="Gerador de Link para WhatsApp gratuito da RD Station. Crie seu link personalizado e inicie conversas com um clique nos seus canais digitais!"
+      />
+      <Meta
+        name="keywords"
+        content="gerador link whatsapp, link whatsapp, whatsapp business, rd station, criar link whatsapp"
+      />
+      <Meta property="og:title" content="Gerador de Link para WhatsApp - RD Station" />
+      <Meta
+        property="og:description"
+        content="Crie seu link de WhatsApp e inicie conversas com um clique nos seus canais digitais!"
+      />
+      <Meta property="og:type" content="website" />
+      <Meta name="twitter:card" content="summary_large_image" />
+      <Meta name="twitter:title" content="Gerador de Link para WhatsApp - RD Station" />
+      <Meta
+        name="twitter:description"
+        content="Crie seu link de WhatsApp e inicie conversas com um clique nos seus canais digitais!"
+      />
+      <HeadLink rel="canonical" href="https://gerador-link-whatsapp.rdstation.com/" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebApplication",
-            "name": "Gerador de Link para WhatsApp",
-            "description": "Ferramenta gratuita para criar links personalizados do WhatsApp",
-            "url": "https://gerador-link-whatsapp.rdstation.com/",
-            "applicationCategory": "UtilityApplication",
-            "operatingSystem": "Web",
-            "offers": {
+            name: "Gerador de Link para WhatsApp",
+            description: "Ferramenta gratuita para criar links personalizados do WhatsApp",
+            url: "https://gerador-link-whatsapp.rdstation.com/",
+            applicationCategory: "UtilityApplication",
+            operatingSystem: "Web",
+            offers: {
               "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "BRL"
+              price: "0",
+              priceCurrency: "BRL",
             },
-            "provider": {
+            provider: {
               "@type": "Organization",
-              "name": "RD Station",
-              "url": "https://www.rdstation.com"
-            }
-          })}
-        </script>
-      </Helmet>
+              name: "RD Station",
+              url: "https://www.rdstation.com",
+            },
+          }),
+        }}
+      />
 
       <Header />
 
